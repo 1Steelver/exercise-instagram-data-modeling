@@ -13,10 +13,10 @@ class User(Base):
 
     id = Column(Integer, primary_key=True)
     user_name = Column(String(250))
-    first_name = Column(String(10))
-    last_name = Column(String(10))
-    email = Column(String(100))
-    password = Column(String(150))
+    first_name = Column(String(15))
+    last_name = Column(String(15))
+    email = Column(String(90))
+    password = Column(String(100))
 
 class Follower(Base):
     __tablename__ = 'follower'
